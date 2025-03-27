@@ -276,7 +276,7 @@ public class Segment
                             line = new SegmentLine();
                         }
 
-                        text = string.Concat(parts.Skip(1).Take(parts.Length - 1));
+                        text = string.Join(Environment.NewLine, parts.Skip(1).Take(parts.Length - 1));
                     }
                     else
                     {
